@@ -5,17 +5,17 @@ import {
   MdHighQuality,
   MdHome,
   MdLock,
-  MdShoppingCart,
   MdAutoGraph,
   MdAddModerator,
+  MdOutlineAgriculture,
 } from "react-icons/md";
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
 import QualityAnalyze from "views/admin/quality-analyze";
+import YieldPrediction from "views/admin/yield";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
@@ -30,17 +30,7 @@ const routes = [
     icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
     component: MainDashboard,
   },
-  // {
-  //   name: "Knowledge Delivery",
-  //   layout: "/admin",
-  //   path: "/nft-marketplace",
-  //   isVisibleInSidebar: true,
-  //   icon: (
-  //     <Icon as={MdShoppingCart} width="20px" height="20px" color="inherit" />
-  //   ),
-  //   component: NFTMarketplace,
-  //   secondary: true,
-  // },
+
   {
     name: "Growth Curve",
     layout: "/admin",
@@ -49,13 +39,21 @@ const routes = [
     path: "/data-tables",
     component: DataTables,
   },
-  // {
-  //   name: "Yield Prediction",
-  //   layout: "/admin",
-  //   path: "/profile",
-  //   icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-  //   component: Profile,
-  // },
+  {
+    name: "Yield Prediction",
+    layout: "/admin",
+    path: "/yield",
+    isVisibleInSidebar: true,
+    icon: (
+      <Icon
+        as={MdOutlineAgriculture}
+        width="20px"
+        height="20px"
+        color="inherit"
+      />
+    ),
+    component: YieldPrediction,
+  },
   {
     name: "Quality Identification",
     layout: "/admin",

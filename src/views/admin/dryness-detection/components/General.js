@@ -24,12 +24,13 @@ export default function GeneralInformation(props) {
         mt="10px"
         mb="4px"
       >
-        General Information
+        Description
       </Text>
       <Text color={textColorSecondary} fontSize="md" me="26px" mb="40px">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum...
+        voluptatum laborum numquam blanditiisharum quisquam eius sed odit fugiat
+        iusto fuga praesentium optio, eaque rerum...
       </Text>
     </Card>
   );

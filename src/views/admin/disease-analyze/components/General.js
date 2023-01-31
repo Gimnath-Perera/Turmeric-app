@@ -31,6 +31,28 @@ export default function GeneralInformation(props) {
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
         voluptatum laborum...
       </Text>
+      <SimpleGrid columns="2" gap="20px">
+        <Information
+          boxShadow={cardShadow}
+          title="Item"
+          value="molestiae quas vel sint commodi "
+        />
+        <Information
+          boxShadow={cardShadow}
+          title="Item"
+          value="molestiae quas vel sint commodi "
+        />
+        <Information
+          boxShadow={cardShadow}
+          title="Item"
+          value="molestiae quas vel sint commodi "
+        />
+        <Information
+          boxShadow={cardShadow}
+          title="Item"
+          value="molestiae quas vel sint commodi "
+        />
+      </SimpleGrid>
     </Card>
   );
 }

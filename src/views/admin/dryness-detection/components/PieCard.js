@@ -29,6 +29,17 @@ export default function Conversion(props) {
         <Text color={textColor} fontSize="md" fontWeight="600" mt="4px">
           Results
         </Text>
+        <Select
+          fontSize="sm"
+          variant="subtle"
+          defaultValue="monthly"
+          width="unset"
+          fontWeight="700"
+        >
+          <option value="daily">Daily</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+        </Select>
       </Flex>
 
       <PieChart
@@ -56,7 +67,7 @@ export default function Conversion(props) {
               fontWeight="700"
               mb="5px"
             >
-              Tumeric
+              Clean
             </Text>
           </Flex>
           <Text fontSize="lg" color={textColor} fontWeight="700">
@@ -73,7 +84,7 @@ export default function Conversion(props) {
               fontWeight="700"
               mb="5px"
             >
-              Other
+              Not clean
             </Text>
           </Flex>
           <Text fontSize="lg" color={textColor} fontWeight="700">

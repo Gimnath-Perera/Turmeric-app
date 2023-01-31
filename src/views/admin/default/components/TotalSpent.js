@@ -61,7 +61,7 @@ export default function TotalSpent(props) {
               color={textColorSecondary}
               me="4px"
             />
-            This month
+            Select a region
           </Button>
           <Button
             ms="auto"

@@ -253,12 +253,20 @@ export const pieChartData = [63, 25, 12];
 
 export const lineChartDataTotalSpent = [
   {
-    name: "Revenue",
+    name: "PH",
     data: [50, 64, 48, 66, 49, 68],
   },
   {
-    name: "Profit",
+    name: "Moistue",
     data: [30, 40, 24, 46, 20, 46],
+  },
+  {
+    name: "Soil Moistue",
+    data: [12, 18, 21, 41, 60, 72],
+  },
+  {
+    name: "Tempreture",
+    data: [10, 15, 25, 35, 45, 55],
   },
 ];
 

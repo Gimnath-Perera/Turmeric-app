@@ -37,13 +37,13 @@ export default function Banner(props) {
         bg={box}
       />
       <Text color={textColorPrimary} fontWeight="bold" fontSize="2xl" mt="10px">
-        Results
+        Dryness Detection
       </Text>
 
       <Box w="100%" mt="auto">
         <Flex w="100%" justify="space-between" mb="10px">
           <Text color={textColorSecondary} fontSize="sm" maxW="40%">
-            Turmeric
+            Dryness Level
           </Text>
           <Text color={textColorSecondary} fontSize="sm" maxW="40%">
             50%

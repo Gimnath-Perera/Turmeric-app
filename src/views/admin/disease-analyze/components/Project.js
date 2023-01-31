@@ -32,7 +32,7 @@ export default function Project(props) {
             fontSize="md"
             mb="4px"
           >
-            Sample #
+            Ipsa laudantium
           </Text>
           <Text
             fontWeight="500"

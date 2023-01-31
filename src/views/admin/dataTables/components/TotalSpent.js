@@ -12,7 +12,7 @@ import Card from "components/card/Card.js";
 import LineChart from "components/charts/LineChart";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
+import { MdBarChart, MdLocationOn } from "react-icons/md";
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {
@@ -56,12 +56,8 @@ export default function TotalSpent(props) {
             color={textColorSecondary}
             borderRadius="7px"
           >
-            <Icon
-              as={MdOutlineCalendarToday}
-              color={textColorSecondary}
-              me="4px"
-            />
-            This month
+            <Icon as={MdLocationOn} color={textColorSecondary} me="4px" />
+            Select a region
           </Button>
           <Button
             ms="auto"

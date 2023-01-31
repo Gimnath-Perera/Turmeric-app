@@ -37,19 +37,31 @@ export default function Banner(props) {
         bg={box}
       />
       <Text color={textColorPrimary} fontWeight="bold" fontSize="2xl" mt="10px">
-        Results
+        Quality analysis
       </Text>
-
+      <Text
+        color={textColorSecondary}
+        fontSize="md"
+        maxW={{ base: "100%", xl: "80%", "3xl": "60%" }}
+        mx="auto"
+      >
+        Lorem Ipsum has been the industry's
+      </Text>
       <Box w="100%" mt="auto">
         <Flex w="100%" justify="space-between" mb="10px">
           <Text color={textColorSecondary} fontSize="sm" maxW="40%">
-            Turmeric
+            As a precentage
           </Text>
           <Text color={textColorSecondary} fontSize="sm" maxW="40%">
-            50%
+            54%
           </Text>
         </Flex>
-        <Progress align="start" colorScheme="yellow" value={50} w="100%" />
+        <Progress
+          align="start"
+          colorScheme="green"
+          value={(used / total) * 100}
+          w="100%"
+        />
       </Box>
     </Card>
   );

@@ -29,9 +29,7 @@ export default function Projects(props) {
         Previous Checks
       </Text>
       <Text color={textColorSecondary} fontSize="md" me="26px" mb="40px">
-        Provident similique accusantium nemo autem. Veritatis obcaecati tenetur
-        iure eius earum. Ut molestias architecto voluptate aliquam nihil,
-        eveniet
+        Results of previous tests can be checked here
       </Text>
       <Project
         boxShadow={cardShadow}

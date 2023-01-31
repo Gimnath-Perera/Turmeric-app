@@ -8,13 +8,17 @@ import {
   MdAutoGraph,
   MdAddModerator,
   MdOutlineAgriculture,
+  MdBugReport,
+  MdOutlineWaterDrop,
 } from "react-icons/md";
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
 import Profile from "views/admin/profile";
+import DrynessDetection from "views/admin/dryness-detection";
 import DataTables from "views/admin/dataTables";
 import QualityAnalyze from "views/admin/quality-analyze";
+import DiseaseAnalyze from "views/admin/disease-analyze";
 import YieldPrediction from "views/admin/yield";
 
 // Auth Imports
@@ -55,6 +59,21 @@ const routes = [
     component: YieldPrediction,
   },
   {
+    name: "Dryness Identification",
+    layout: "/admin",
+    path: "/dryness-detection",
+    isVisibleInSidebar: true,
+    icon: (
+      <Icon
+        as={MdOutlineWaterDrop}
+        width="20px"
+        height="20px"
+        color="inherit"
+      />
+    ),
+    component: DrynessDetection,
+  },
+  {
     name: "Quality Identification",
     layout: "/admin",
     path: "/quality-analyze",
@@ -63,6 +82,14 @@ const routes = [
       <Icon as={MdHighQuality} width="20px" height="20px" color="inherit" />
     ),
     component: QualityAnalyze,
+  },
+  {
+    name: "Disease Identification",
+    layout: "/admin",
+    path: "/disease-analyze",
+    isVisibleInSidebar: true,
+    icon: <Icon as={MdBugReport} width="20px" height="20px" color="inherit" />,
+    component: DiseaseAnalyze,
   },
   {
     name: "Fraud Identification",
@@ -74,6 +101,7 @@ const routes = [
     ),
     component: Profile,
   },
+
   {
     name: "Sign In",
     layout: "/auth",
